@@ -24,24 +24,6 @@ public class HomeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        //lista de imagens
-        ArrayList<Itens_home> lista = new ArrayList<Itens_home>();
-        Itens_home img1 = new Itens_home(R.drawable.cabelos);
-        Itens_home img2 = new Itens_home(R.drawable.estetica);
-        Itens_home img3 = new Itens_home(R.drawable.manicure);
-        Itens_home img4 = new Itens_home(R.drawable.maqueagem);
-        Itens_home img5 = new Itens_home(R.drawable.penteados);
-
-        lista.add(img1);
-        lista.add(img2);
-        lista.add(img3);
-        lista.add(img4);
-        lista.add(img5);
-
-        ListAdapterItens adapterItens = new ListAdapterItens(this, lista);
-        ListView listView = (ListView) findViewById(R.id.listImagem);
-        listView.setAdapter(adapterItens);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
